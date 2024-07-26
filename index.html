@@ -50,17 +50,35 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="bergur-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav"></nav>
+          <address class="mobile-menu-nav">3</address>
+        </div>
       </div>
     </header>
     <main class="page-main">
-      <section class="main-section">
+      <section class="main-section hidden">
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="main-section-banefits">
-        <div class="container">
+      <section class="main-section-banefits hidden">
+        <div class="container banefits-container">
           <h2 class="main-title visually-hidden">Banefits</h2>
           <ul class="main-list-banefits">
             <li class="main-item-banefits">
@@ -114,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section-team">
+      <section class="main-section-team hidden">
         <div class="container">
           <h2 class="main-text-team">Our Team</h2>
           <ul class="main-list-team">
@@ -290,7 +308,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section-portfolio">
+      <section class="main-section-portfolio hidden">
         <div class="container">
           <h2 class="main-text-portfolio">Our Portfolio</h2>
           <ul class="main-list-portfolio">
@@ -412,7 +430,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container fotter-container">
         <div class="fotter-icons-studio">
           <a class="logo footer-logo" href="./index.html"
@@ -456,7 +474,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-input-form">
+        <div class="container">
           <p class="fotter-article-form">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label-form">
@@ -479,7 +497,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="icon-modal-btn" width="8" height="8">
