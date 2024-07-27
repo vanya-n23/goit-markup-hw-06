@@ -476,18 +476,16 @@ background-color: #404BBF;
 }
 
 
-/* --------6-banefits--------- */
-
-.banefits-container {
-    width: 288px; 
-}
+/* ---------banefits--------- */
 
 .main-section-banefits {
-    margin-left: auto;
-    margin-right: auto ;
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
+    display: flex;  
+}
+
+.main-list-banefits {
+    align-items: flex-start;
 }
 
 .banefits-icon {
@@ -495,6 +493,7 @@ background-color: #404BBF;
 }
 
 .main-item-banefits {
+    max-width: 100%;
     margin-bottom: 72px;
 }
 
@@ -517,9 +516,22 @@ background-color: #404BBF;
 }
 
 @media screen and (min-width:768px) {
+    
     .main-section-banefits {
+        padding-left: 16px;
+        padding-right: 16px;
             padding-top: 96px;
             padding-bottom: 96px;
             display: flex;
         }
+
+        .main-list-banefits {
+            align-items: flex-start;
+            display: flex;
+            gap: 24px;
+        }
+
+        .main-item-banefits {
+           width: calc((100% - 24px) / 2);
+           }
 }
