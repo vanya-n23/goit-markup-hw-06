@@ -69,7 +69,7 @@
 
 
 
-.overlay-text {
+/* .overlay-text {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -113,14 +113,12 @@ li:hover p {
 .portfolio-card-div {
         border: 1px solid #e7e9fc;
         padding: 32px 16px;
-        border-top: none;
-        
+        border-top: none;   
 }
 
 .main-section-portfolio {
         padding-top: 120px;
         padding-bottom: 120px;
-
 }
 
 .main-list-portfolio {
@@ -157,7 +155,7 @@ li:hover p {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-}
+} */
 
 /* FOTTER */
 
@@ -173,8 +171,7 @@ li:hover p {
         margin-bottom: 16px;
 }
 
-.footer-logo .logo-part {
-        
+.footer-logo .logo-part {    
         margin-bottom: 16px;
         color: #f4f4fd;
 }
@@ -209,8 +206,7 @@ li:hover p {
 
 .fotter-icons-list {    
         display: flex;
-        gap: 16px;
-        
+        gap: 16px;     
 }
 
 .fotter-icons-list .icon-footer-link {
