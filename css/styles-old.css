@@ -277,9 +277,7 @@ li:hover p {
         color: #fff;
         display: flex;
         align-items: center;
-        cursor: pointer;
-        
-        
+        cursor: pointer;   
 }
 
 .footer-form {
