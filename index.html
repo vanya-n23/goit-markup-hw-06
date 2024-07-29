@@ -57,16 +57,70 @@
           </svg>
         </button>
       </div>
-
-      <div class="mobile-menu">
+      <div class="mobile-menu-overlay is-open">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">
+          <button class="mobile-menu-close-btn">
             <svg class="mobile-button-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
-          <nav class="mobile-menu-nav"></nav>
-          <address class="mobile-menu-nav">3</address>
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="nav-link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./index.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+          <div>
+            <address class="contacts-mobile">
+              <ul class="contacts-list">
+                <li class="contacts-items">
+                  <a class="contacts-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-items">
+                  <a class="contacts-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="icons-team-list">
+              <li class="icons-team-item">
+                <a href="" target="_blank" class="icon-team-link">
+                  <svg class="icon-team" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-team-item">
+                <a href="" target="_blank" class="icon-team-link">
+                  <svg class="icon-team" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-team-item">
+                <a href="" target="_blank" class="icon-team-link">
+                  <svg class="icon-team" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-team-item">
+                <a href="" target="_blank" class="icon-team-link">
+                  <svg class="icon-team" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -520,7 +574,7 @@
       </div>
     </footer>
 
-    <div class="backdrop hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="icon-modal-btn" width="8" height="8">
@@ -585,14 +639,17 @@
               value="true"
               class="modal-chek visually-hidden"
             />
+
             <label for="user-privacy" class="terms-article"
               ><span class="span-label">
                 <svg width="10" height="8" class="icon-check">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a class="link-check-article" href="./index.html"
-                >Privacy Policy</a
+              ><span>
+                accept the terms and conditions of the
+                <a class="link-check-article" href="./index.html"
+                  >Privacy Policy</a
+                ></span
               >
             </label>
           </div>
