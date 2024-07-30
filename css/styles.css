@@ -1352,7 +1352,7 @@ flex-direction: row;
     flex-shrink: 0;
 }
 
-.modal-chek:checked+.terms-article span {
+.modal-chek:checked+.terms-article .span-label{
     border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
