@@ -64,28 +64,30 @@
               <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
-          <ul class="mobile-menu-list">
-            <li>
-              <a class="nav-link" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="nav-link" href="./index.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="nav-link" href="./index.html">Contacts</a>
-            </li>
-          </ul>
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="nav-link curent-s" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./index.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
           <div>
             <address class="contacts-mobile">
               <ul class="contacts-list">
                 <li class="contacts-items">
-                  <a class="contacts-link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
+                  <a class="contacts-link tel-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
                   >
                 </li>
                 <li class="contacts-items">
-                  <a class="contacts-link" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
+                  <a class="contacts-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
                   >
                 </li>
               </ul>
@@ -93,28 +95,28 @@
             <ul class="icons-team-list">
               <li class="icons-team-item">
                 <a href="" target="_blank" class="icon-team-link">
-                  <svg class="icon-team" width="16" height="16">
+                  <svg class="icon-team" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="icons-team-item">
                 <a href="" target="_blank" class="icon-team-link">
-                  <svg class="icon-team" width="16" height="16">
+                  <svg class="icon-team" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="icons-team-item">
                 <a href="" target="_blank" class="icon-team-link">
-                  <svg class="icon-team" width="16" height="16">
+                  <svg class="icon-team" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="icons-team-item">
                 <a href="" target="_blank" class="icon-team-link">
-                  <svg class="icon-team" width="16" height="16">
+                  <svg class="icon-team" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -125,13 +127,13 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="main-section hidden">
+      <section class="main-section">
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="main-section-banefits hidden">
+      <section class="main-section-banefits">
         <div class="container banefits-container">
           <h2 class="main-title visually-hidden">Banefits</h2>
           <ul class="main-list-banefits">
@@ -186,7 +188,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section-team hidden">
+      <section class="main-section-team">
         <div class="container team-container">
           <h2 class="main-text-team">Our Team</h2>
           <ul class="main-list-team">
@@ -366,7 +368,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section-portfolio hidden">
+      <section class="main-section-portfolio">
         <div class="container">
           <h2 class="main-text-portfolio">Our Portfolio</h2>
           <ul class="main-list-portfolio">
@@ -506,7 +508,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container fotter-container">
         <div class="fotter-icons-studio">
           <a class="logo footer-logo" href="./index.html"
@@ -574,7 +576,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="icon-modal-btn" width="8" height="8">
@@ -646,7 +648,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
               ><span>
-                accept the terms and conditions of the
+                I accept the terms and conditions of the
                 <a class="link-check-article" href="./index.html"
                   >Privacy Policy</a
                 ></span

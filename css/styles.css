@@ -226,9 +226,9 @@
 
   .contacts-link {
       padding: 24px 0;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
+font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -242,10 +242,6 @@
     top: 0;
     left: 0;
     background-color: #ffff;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-    padding-bottom: 40px;
     opacity: 0;
     pointer-events: none;
     flex-direction: column;   
@@ -315,9 +311,14 @@
 
 .mobile-menu-list .nav-link {
     padding: 0;
-    font-size: 36px;
-        font-weight: 700;
-        line-height: 24px;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.12;
+        letter-spacing: 0.02em;
+}
+
+.nav-link.curent-s {
+    color: #404bbf;
 }
 
 .nav-link {
@@ -339,14 +340,16 @@
 }
 
  .contacts-link {
-     font-size: 12px;
-     line-height: 24px;
+     line-height: 1.17;
      letter-spacing: 0.04em;
      color: #434455;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     font-size: 20px;
      font-weight: 400;
  }
+
+.tel-link {
+    color: #404bbf;
+}
 
  .contacts-mobile .contacts-list .contacts-link {
 font-size: 20px;
@@ -364,6 +367,7 @@ font-size: 20px;
   .mobile-menu-container .icons-team-list {
     gap: 40px;
     margin-top: 48px;
+    justify-content: flex-start;
   }
 
 
@@ -383,15 +387,14 @@ font-size: 20px;
 
 .main-section {
     background-color: #2e2f42;
-    display: flex;
     padding: 72px 0;
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(/images/hero-bg-mob.jpg);
+        url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -444,18 +447,18 @@ font-size: 20px;
             background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(/images/hero-bg-mob-2x.jpg);
+        url(../images/hero-bg-mob-2x.jpg);
     }
 }
 
 @media screen and (min-width:768px) {
     .main-section {
         padding: 112px 0;
-        width: 768px;
+        max-width: 768px;
             background-image: linear-gradient(to bottom,
                         rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(/images/hero-bg-tab.jpg);
+                    url(../images/hero-bg-tab.jpg);
     }
 
         @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -465,7 +468,7 @@ font-size: 20px;
                 background-image: linear-gradient(to bottom,
                         rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(/images/hero-bg-tab-2x.jpg);
+                    url(../images/hero-bg-tab-2x.jpg);
             }
         }
 
@@ -481,7 +484,11 @@ font-size: 20px;
 @media screen and (min-width:1158px) {
     .main-section {
     padding: 188px 0;
-    width: 1440px;
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-squashed.jpg);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -491,7 +498,7 @@ font-size: 20px;
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(/images/hero-bg-2x.jpg);
+            url(../images/hero-bg-2x.jpg);
     }
 }
 
@@ -506,7 +513,6 @@ font-size: 20px;
 .main-section-banefits {
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
 }
 
 .main-list-banefits {
@@ -559,6 +565,16 @@ font-size: 20px;
 
 @media screen and (min-width:1158px) {
 
+.main-title-banefits {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.main-article-banefits {
+    font-weight: 400;
+}
+
 .main-section-banefits {
         padding-top: 120px;
         padding-bottom: 120px;    
@@ -590,7 +606,6 @@ font-size: 20px;
 .main-section-team {
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
     background-color: #f4f4fd;
 }
 
@@ -714,7 +729,6 @@ font-size: 20px;
 .main-section-portfolio {
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
 }
 
 
@@ -760,22 +774,6 @@ font-size: 20px;
 
 .overlay-text {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-    padding: 8px;
-    background-color: #3f51b5;
-    color: #fff;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 li:hover p {
@@ -798,6 +796,22 @@ li:hover p {
 }
 
 @media screen and (min-width:1158px) {
+
+    .overlay-text{
+    display: block;
+        position: absolute;
+        top: 0;
+        background-color: #4d5ae5;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        height: 100%;
+        padding: 40px 32px;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     .container {
         width: 1158px;
@@ -832,6 +846,7 @@ li:hover p {
 
 .main-item-portfolio {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
 }
 
 .portfolio-card-div {
@@ -850,11 +865,17 @@ li:hover p {
 
 /* ------footer------- */
 
+.container.fotter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+}
+
 .page-footer {
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
 }
 
 .footer-logo {
@@ -919,8 +940,7 @@ li:hover p {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    margin-left: 80px;
-    margin-top: 72px;
+    text-align: center;
 }
 
 .footer-label-form {
@@ -981,6 +1001,17 @@ li:hover p {
 
 @media screen and (min-width:768px) {
 
+    .fotter-article-form {
+        text-align: left;
+    }
+
+    .container.fotter-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 72px 24px;
+        }
+
 .fotter-container {
     display: flex;
     flex-wrap: wrap;
@@ -1016,6 +1047,15 @@ li:hover p {
 }
 
 @media screen and (min-width:1158px) {
+
+    .container.fotter-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 0;
+            padding: 0 15px;
+
+        }
 
     .footer-article {
         text-align: left;
@@ -1058,7 +1098,7 @@ flex-direction: row;
 }
 
 .list-div-footer {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .footer-form {
@@ -1100,6 +1140,8 @@ flex-direction: row;
     position: absolute;
     left: 50%;
     top: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 288px;
     min-height: 623px;
     border-radius: 4px;
@@ -1189,7 +1231,6 @@ flex-direction: row;
     padding-right: 24px;
     background-color: transparent;
     padding-left: 38px;
-
 }
 
 
@@ -1286,22 +1327,30 @@ flex-direction: row;
 
 .terms-article {
     display: flex;
-    font-family: "Roboto", sans-serif;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    align-items: center;
-    gap: 8px;
-    line-height: 1.17;
 }
 
 .span-label {
+    width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        flex-shrink: 0;
+        fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
 }
-
-
 
 .modal-chek:checked+.terms-article span {
     border: none;
